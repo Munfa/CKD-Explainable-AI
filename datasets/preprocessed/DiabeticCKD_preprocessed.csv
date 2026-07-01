@@ -1,4 +1,4 @@
-"Gender (M-male, F-female)","Job (1-normal, 2-intermediate, 3-heavy)","Family Background of Diabetes (1-yes, 0-no)",Diabetic Year,Age,"Follow suggested Diet (1-yes, 0-no)","Take Medicine for Diabetes (1-yes, 0-no)","Take Insulin (1-yes, 0-no)","Hypertension (1-yes, 0-no)","Heart Disease (1-yes, 0-no)","Sleep (1-sufficient, 0-insufficient)","Water Consumption (1-sufficient, 0-insufficient)","Smoke (1-yes, 0-no)","Zarda, Betel Leaf (1-yes, 0-no)","Walk Regularly (1-yes, 0-no)","Urination Properly (1-yes, 0-no)","Urinary Infection (1-yes, 0-no)","Pain killer (1-yes, 0-no)",Calorie Intake (per day),"CKD (1-yes, 0-no)",Current_BMI
+Gender,Job,Family_Background_of_Diabetes,Diabetic_Year,Age,Follow_suggested_Diet,Take_Medicine_for_Diabetes,Take_Insulin,Hypertension,Heart_Disease,Sleep,Water_Consumption,Smoke,Zarda_Betel_Leaf,Walk_Regularly,Urination_Properly,Urinary_Infection,Pain_killer,Calorie_Intake,CKD,Current_BMI
 0,1,0,1,48,1,0,1,0,0,0,1,0,0,0,1,0,1,1800,0,19.504622396481206
 0,1,0,2,49,0,0,1,0,0,0,1,0,0,0,1,0,1,1800,0,19.504622396481206
 0,1,0,3,50,1,0,1,0,0,0,1,0,0,0,1,0,1,1800,0,19.504622396481206
@@ -1189,9 +1189,16 @@
 0,1,0,8,60,0,1,1,0,0,1,1,0,0,1,1,0,0,1400,0,28.147178485800495
 0,1,0,9,61,0,1,1,0,0,1,1,0,0,0,1,0,0,1400,0,27.19303684221404
 0,1,0,10,62,0,1,1,0,0,1,1,0,0,0,1,0,0,1400,0,27.670107664007265
+0,1,0,1,46,1,1,0,0,0,1,1,0,1,0,1,0,0,1400,0,25.83338500010333
+0,1,0,2,47,1,1,0,0,0,1,1,0,1,0,1,0,0,1400,0,26.26394141677172
+0,1,0,3,48,1,1,0,0,0,1,1,0,1,0,1,0,0,1400,0,25.402828583434943
 0,1,0,4,49,1,1,1,0,0,1,1,0,1,0,1,0,0,1400,0,25.83338500010333
 0,1,0,5,50,1,1,1,1,0,1,1,0,1,0,1,0,0,1400,0,25.402828583434943
+0,1,0,6,51,1,1,1,0,0,1,1,0,1,0,1,0,0,1400,0,24.972272166766555
 0,1,0,7,52,1,1,1,1,0,1,1,0,1,0,1,0,0,1400,0,26.26394141677172
+0,1,0,8,53,1,1,1,0,0,1,1,0,1,0,1,0,1,1400,0,27.125054250108498
+0,1,0,9,54,1,1,1,1,0,1,1,0,1,0,1,0,1,1400,0,26.69449783344011
+0,1,0,10,55,1,1,1,0,0,1,1,0,1,0,1,1,1,1400,0,25.83338500010333
 0,1,0,1,46,1,1,0,0,0,1,1,0,1,1,1,0,0,1300,0,25.83338500010333
 0,1,0,2,47,1,1,0,0,0,1,1,0,1,1,1,0,0,1300,0,24.972272166766555
 0,1,0,3,48,1,1,0,0,0,1,1,0,1,1,1,0,0,1300,0,25.402828583434943
