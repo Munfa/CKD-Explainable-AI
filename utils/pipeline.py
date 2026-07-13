@@ -37,8 +37,8 @@ def find_best_threshold(y_true, y_prob, thresholds=np.arange(0.01, 1.00, 0.01)):
         
     return best_threshold, best_mcc
 
-def save_fold_predictions(save_dir, model_name, fold_number, estimator, best_params, threshold, test_indices,
-                          y_true, y_prob, y_pred):
+def save_fold_predictions(save_dir, model_name, fold_number, estimator, best_params, threshold, 
+                          test_indices, y_true, y_prob, y_pred):
     model_dir = os.path.join(
         save_dir, 
         model_name.replace(" ","_")
@@ -75,3 +75,4 @@ def save_fold_predictions(save_dir, model_name, fold_number, estimator, best_par
     )
 
     joblib.dump(output, filename)
+    return filename

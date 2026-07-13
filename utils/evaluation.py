@@ -11,13 +11,7 @@ from sklearn.metrics import (
     brier_score_loss
 )
 
-def evaluate_model(model, X_train, X_test, y_train, y_test):
-
-    model.fit(X_train, y_train)
-
-    predictions = model.predict(X_test)
-
-    probabilities = model.predict_proba(X_test)[:,1]
+def evaluate_model(y_test, predictions, probabilities):
 
     tn, fp, fn, tp = confusion_matrix(
         y_test,
@@ -59,7 +53,16 @@ def evaluate_model(model, X_train, X_test, y_train, y_test):
             brier_score_loss(
                 y_test,
                 probabilities
-            )
+            ),
+        "Confusion Matrix":
+            confusion_matrix(
+                y_test,
+                predictions
+            ),
+        "TP": tp,
+        "TN": tn,
+        "FP": fp,
+        "FN": fn
     }
 
     return results

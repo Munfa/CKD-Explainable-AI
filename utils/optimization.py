@@ -5,7 +5,7 @@ from scipy.stats import loguniform
 # ==========================================================
 # Hyperparameter Search Space
 # ==========================================================
-def get_param_dist():
+def get_param_dist(model_name):
     PARAM_DISTRIBUTIONS = {
 
         # ------------------------------------------------------
@@ -250,14 +250,14 @@ def get_param_dist():
         }
 
     }
-    return PARAM_DISTRIBUTIONS
+    return PARAM_DISTRIBUTIONS[model_name]
 
 
 # ==========================================================
 # Randomized Search Iterations
 # ==========================================================
 
-def get_search_iter():
+def get_search_iter(model_name):
     SEARCH_ITERATIONS = {
 
         "Logistic Regression": 15,
@@ -277,18 +277,6 @@ def get_search_iter():
         "CatBoost": 40
 
     }
-    return SEARCH_ITERATIONS
+    return SEARCH_ITERATIONS[model_name]
 
 
-# ==========================================================
-# Optimization Metric
-# ==========================================================
-
-# def get_selection_metric
-# SCORING = {
-
-#     "Dataset1": "roc_auc",
-
-#     "Dataset2": "average_precision"
-
-# }

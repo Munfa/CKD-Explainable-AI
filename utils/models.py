@@ -11,13 +11,25 @@ from catboost import CatBoostClassifier
 
 RANDOM_STATE = 42
 
-def get_models():
-    models = {
+def get_base_models():
+    baseline_models = {
         "Majority Dummy": DummyClassifier(strategy="most_frequent"),
 
         "Stratified Dummy": DummyClassifier(strategy="stratified",
                                             random_state=RANDOM_STATE),
+    }
+    return baseline_models
 
+def get_age_baseline():
+    age_baseline = {
+        "Logistic Regression":
+            LogisticRegression(max_iter=5000,
+                            random_state=RANDOM_STATE)
+    }
+    return age_baseline
+
+def get_models():
+    models = {
         "Logistic Regression":
             LogisticRegression(max_iter=5000,
                             random_state=RANDOM_STATE),
