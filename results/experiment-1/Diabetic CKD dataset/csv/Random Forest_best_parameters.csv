@@ -1,0 +1,6 @@
+Fold,model__class_weight,model__max_depth,model__max_features,model__min_samples_leaf,model__n_estimators
+1,balanced,14,log2,6,485
+2,balanced,6,log2,6,153
+3,balanced,6,log2,2,317
+4,balanced,4,sqrt,7,161
+5,,4,,7,363
