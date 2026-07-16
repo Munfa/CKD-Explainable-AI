@@ -70,7 +70,7 @@ def save_fold_predictions(save_dir, model_name, fold_number, estimator, best_par
     }
 
     filename = os.path.join(
-        model_name,
+        model_dir,
         f"fold{fold_number}.joblib"
     )
 
