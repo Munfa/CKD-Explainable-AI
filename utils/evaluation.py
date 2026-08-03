@@ -66,3 +66,23 @@ def evaluate_model(y_test, predictions, probabilities):
     }
 
     return results
+
+
+def evaluate_outer_fold(estimator, X_test, y_test, threshold):
+  test_probabilities = estimator.predict_proba(
+        X_test
+    )[:, 1]
+
+  test_predictions = (
+        test_probabilities >= threshold
+    ).astype(int)
+
+  ### Evaluate fold ###
+  fold_metrics = evaluate_model(
+
+        y_test= y_test,
+        predictions= test_predictions,
+        probabilities= test_probabilities
+
+    )
+  return fold_metrics, test_predictions, test_probabilities

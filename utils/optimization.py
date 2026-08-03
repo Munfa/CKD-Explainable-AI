@@ -1,6 +1,9 @@
 from scipy.stats import randint
 from scipy.stats import uniform
 from scipy.stats import loguniform
+from sklearn.model_selection import RandomizedSearchCV
+
+RANDOM_STATE = 42
 
 # ==========================================================
 # Hyperparameter Search Space
@@ -279,4 +282,36 @@ def get_search_iter(model_name):
     }
     return SEARCH_ITERATIONS[model_name]
 
+# ==========================================================
+# Find best parameters and best pipeline
+# ==========================================================
+def tune_model(model_name, pipeline, X_train, y_train, inner_cv, scoring, groups=None):
 
+  if model_name in ["Majority Dummy", "Stratified Dummy"]:
+    pipeline.fit(X_train, y_train)
+    return pipeline, {}
+
+  ### RandomizedSearchCV ###
+  random_search = RandomizedSearchCV(
+
+      estimator=pipeline,
+      param_distributions=get_param_dist(model_name),
+      n_iter=get_search_iter(model_name),
+      scoring=scoring,
+      cv=inner_cv,
+      random_state=RANDOM_STATE,
+      n_jobs=-1,
+      refit=True
+    )
+
+  random_search.fit(
+          X_train,
+          y_train,
+          groups=groups
+  )
+
+  ### Best Estimator ###
+  best_pipeline = random_search.best_estimator_
+  best_params = random_search.best_params_
+
+  return best_pipeline, best_params
