@@ -99,8 +99,8 @@ def select_best_threshold(model_name, best_param, X_train, y_train, inner_cv, gr
 # ==========================================================
 # Save predictions per fold 
 # ==========================================================
-def save_fold_predictions(save_dir, model_name, fold_number, estimator, best_params, threshold, 
-                          test_indices, y_true, y_prob, y_pred):
+def save_fold_predictions(save_dir, model_name, fold_number, best_pipeline, best_params, threshold, train_indices,
+                          test_indices, best_score, y_true, y_prob, y_pred):
     model_dir = os.path.join(
         save_dir, 
         model_name.replace(" ","_")
@@ -112,23 +112,16 @@ def save_fold_predictions(save_dir, model_name, fold_number, estimator, best_par
     )
 
     output = {
-
         "fold": fold_number,
-
-        "best_estimator": estimator,
-
+        "best_pipeline": best_pipeline,
         "best_params": best_params,
-
         "threshold": threshold,
-
+        "train_indices": train_indices,
         "test_indices": test_indices,
-
+        "inner_best_score": best_score,
         "y_true": y_true,
-
         "y_prob": y_prob,
-
         "y_pred": y_pred
-
     }
 
     filename = os.path.join(

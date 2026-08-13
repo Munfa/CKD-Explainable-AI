@@ -1,6 +1,0 @@
-Fold,model__C,model__class_weight,model__penalty,model__solver
-1,0.0010090061869151559,balanced,l2,lbfgs
-2,0.0010090061869151559,balanced,l2,lbfgs
-3,0.004982752357076452,balanced,l2,lbfgs
-4,3.4702669886504163,balanced,l2,lbfgs
-5,0.04661686413912769,balanced,l2,lbfgs

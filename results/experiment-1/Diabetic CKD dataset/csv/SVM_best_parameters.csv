@@ -1,6 +1,0 @@
-Fold,model__C,model__class_weight,model__gamma
-1,0.028888383623653185,balanced,scale
-2,0.0019517224641449498,balanced,scale
-3,0.5414413211338525,balanced,scale
-4,0.033205591037519584,balanced,scale
-5,0.01967432802530612,balanced,auto

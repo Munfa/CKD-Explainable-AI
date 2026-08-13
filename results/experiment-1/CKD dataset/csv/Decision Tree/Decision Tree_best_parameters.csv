@@ -1,6 +1,0 @@
-Fold,model__class_weight,model__max_depth,model__min_samples_leaf,model__min_samples_split
-1,,9,3,15
-2,,9,3,15
-3,,9,5,17
-4,,21,8,8
-5,balanced,11,4,15

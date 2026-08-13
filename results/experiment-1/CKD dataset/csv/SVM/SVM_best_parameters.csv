@@ -1,4 +1,4 @@
-Fold,model__C,model__class_weight,model__gamma
+﻿Fold,model__C,model__class_weight,model__gamma
 1,0.006026889128682512,,scale
 2,0.0019517224641449498,balanced,scale
 3,0.0019517224641449498,balanced,scale

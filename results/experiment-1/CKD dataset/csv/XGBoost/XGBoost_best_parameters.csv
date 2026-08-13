@@ -1,4 +1,4 @@
-Fold,model__colsample_bytree,model__learning_rate,model__max_depth,model__min_child_weight,model__n_estimators,model__reg_alpha,model__reg_lambda,model__scale_pos_weight,model__subsample
+﻿Fold,model__colsample_bytree,model__learning_rate,model__max_depth,model__min_child_weight,model__n_estimators,model__reg_alpha,model__reg_lambda,model__scale_pos_weight,model__subsample
 1,0.996884623716487,0.16437037740692914,4,6,352,2.1597250932105787,1.9561457009902097,3,0.7599443886861021
 2,0.7114585856946446,0.23706647149166343,5,2,152,2.447263801387815,5.428252270553004,5,0.8370786895517575
 3,0.7114585856946446,0.23706647149166343,5,2,152,2.447263801387815,5.428252270553004,5,0.8370786895517575

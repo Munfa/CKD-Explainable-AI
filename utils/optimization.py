@@ -313,5 +313,6 @@ def tune_model(model_name, pipeline, X_train, y_train, inner_cv, scoring, groups
   ### Best Estimator ###
   best_pipeline = random_search.best_estimator_
   best_params = random_search.best_params_
+  best_score = random_search.best_score_
 
-  return best_pipeline, best_params
+  return best_pipeline, best_params, best_score
