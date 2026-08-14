@@ -30,7 +30,7 @@ def run_outer_fold_loop(exp_dict, model_name, model, X, y, outer_cv, inner_cv,
         )
 
         ################# Get best pipeline and parameters #################
-        best_pipeline, best_params = tune_model(
+        best_pipeline, best_params, best_score = tune_model(
             model_name, pipeline, X_train, y_train,
             inner_cv, scoring, group_train)
 
@@ -65,8 +65,8 @@ def run_outer_fold_loop(exp_dict, model_name, model, X, y, outer_cv, inner_cv,
         )
 
         ################# Save fold path #################
-        fold_path = save_fold_predictions(FOLD_DIR, model_name, fold, best_pipeline, best_params,
-                                          threshold, test_idx, y_test, y_prob, y_pred)
+        fold_path = save_fold_predictions(FOLD_DIR, model_name, fold, best_pipeline, best_params, threshold, 
+                                          train_idx, test_idx, best_score, y_test, y_prob, y_pred)
         exp_dict[base_name]["saved_folds"].append(
             fold_path
         )
