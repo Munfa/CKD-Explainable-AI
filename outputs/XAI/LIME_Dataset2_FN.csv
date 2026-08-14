@@ -1,0 +1,9 @@
+Feature,LIME_Weight,Dataset,Case
+Urinary_Infection <= 0.00,-0.046747090241243544,Dataset2,FN
+0.00 < Pain_killer <= 1.00,0.03184259397679991,Dataset2,FN
+0.00 < Walk_Regularly <= 1.00,0.025515514343243905,Dataset2,FN
+0.00 < Weight_Diff <= 1.00,-0.022271734213522215,Dataset2,FN
+Heart_Disease <= 0.00,-0.021192757977190082,Dataset2,FN
+0.00 < Age_Diff <= 2.00,-0.01890906878012083,Dataset2,FN
+152.40 < Height <= 157.48,-0.01738488286027954,Dataset2,FN
+0.00 < Take_Insulin <= 1.00,0.017247577198267004,Dataset2,FN

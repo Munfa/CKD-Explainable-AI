@@ -1,0 +1,9 @@
+Feature,LIME_Weight,Dataset,Case
+0.00 < pus_cells <= 1.00,-0.24109612215315387,Dataset1,TP
+0.00 < albumin <= 1.00,0.22813270029245947,Dataset1,TP
+red_cells <= 0.00,0.1562072570072917,Dataset1,TP
+0.00 < bacteria <= 1.00,0.12579066172448894,Dataset1,TP
+co <= 0.00,-0.11326462743804484,Dataset1,TP
+0.00 < mt <= 1.00,0.08872251176128103,Dataset1,TP
+gc <= 0.00,-0.07322449867069075,Dataset1,TP
+kb <= 0.00,-0.06951973435618786,Dataset1,TP

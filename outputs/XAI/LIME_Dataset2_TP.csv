@@ -1,0 +1,9 @@
+Feature,LIME_Weight,Dataset,Case
+Age_Diff > 2.00,0.3429565108193101,Dataset2,TP
+Diabetic_Year > 12.00,-0.05109153827530226,Dataset2,TP
+0.00 < Weight_Diff <= 1.00,-0.03866349682023801,Dataset2,TP
+Heart_Disease <= 0.00,-0.030590465182283408,Dataset2,TP
+Calorie_Intake <= 1300.00,-0.02845621481217382,Dataset2,TP
+0.00 < Take_Insulin <= 1.00,0.02541411916732342,Dataset2,TP
+BMI_per_Year <= 1.87,0.02432894334887237,Dataset2,TP
+Average_Age > 58.00,-0.02294030763238804,Dataset2,TP

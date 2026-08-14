@@ -1,0 +1,9 @@
+Feature,LIME_Weight,Dataset,Case
+0.00 < pus_cells <= 1.00,-0.25196221241664996,Dataset1,FN
+0.00 < albumin <= 1.00,0.21903625482071096,Dataset1,FN
+bacteria <= 0.00,-0.13492795562700297,Dataset1,FN
+0.00 < red_cells <= 1.00,-0.132280851064354,Dataset1,FN
+co <= 0.00,-0.11076304757622027,Dataset1,FN
+0.00 < mt <= 1.00,0.062245372392790675,Dataset1,FN
+bpigment <= 0.00,-0.05358972949317566,Dataset1,FN
+age <= 18.00,-0.050088418866041096,Dataset1,FN
