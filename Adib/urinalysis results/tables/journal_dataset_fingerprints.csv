@@ -1,0 +1,2 @@
+dataset,file_path,file_sha256,raw_rows,raw_columns,processed_rows,processed_features,positive_count,negative_count,positive_rate,missing_raw,missing_processed,grouped,unique_groups,primary_metric
+Dataset1_Urinalysis,/kaggle/input/datasets/miftahuladib/datasets-ckd/CKD_dataset.xlsx,c2c4f04111ed4b06412a8309f898d85c221eea59c0c3a2ba84decb2850b182fb,380,22,380,20,239,141,0.6289473684210526,0,0,False,,roc_auc

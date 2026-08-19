@@ -1,0 +1,23 @@
+[
+  {
+    "dataset": "Dataset1_Urinalysis",
+    "model": "random_forest",
+    "seed": 0,
+    "imbalance": "balanced",
+    "primary_metric": "roc_auc",
+    "n_iter": 15,
+    "best_score": 0.9676704596462878,
+    "best_params": {
+      "clf__n_estimators": 600,
+      "clf__min_samples_leaf": 1,
+      "clf__max_features": "sqrt",
+      "clf__max_depth": null
+    },
+    "search_space": {
+      "clf__n_estimators": "[200, 400, 600]",
+      "clf__max_depth": "[None, 6, 10, 16]",
+      "clf__max_features": "['sqrt', 'log2', 0.5]",
+      "clf__min_samples_leaf": "[1, 2, 5]"
+    }
+  }
+]

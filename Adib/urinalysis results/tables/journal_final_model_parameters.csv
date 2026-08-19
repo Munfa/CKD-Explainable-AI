@@ -1,0 +1,2 @@
+dataset,model,seed,imbalance,primary_metric,n_iter,best_score,best_params_json,search_space_json
+Dataset1_Urinalysis,random_forest,0,balanced,roc_auc,15,0.9676704596462878,"{""clf__n_estimators"": 600, ""clf__min_samples_leaf"": 1, ""clf__max_features"": ""sqrt"", ""clf__max_depth"": null}","{""clf__n_estimators"": ""[200, 400, 600]"", ""clf__max_depth"": ""[None, 6, 10, 16]"", ""clf__max_features"": ""['sqrt', 'log2', 0.5]"", ""clf__min_samples_leaf"": ""[1, 2, 5]""}"

@@ -1,0 +1,50 @@
+\begin{tabular}{lllr}
+\toprule
+model & parameter & candidate\_values & tuning\_iterations \\
+\midrule
+dummy & none & [] & 0 \\
+time\_only\_logistic & none & [] & 0 \\
+logistic\_regression & model\_\_C & [0.01, 0.03, 0.1, 0.3, 1, 3, 10] & 12 \\
+decision\_tree & model\_\_criterion & ["gini", "entropy", "log\_loss"] & 12 \\
+decision\_tree & model\_\_max\_depth & [3, 5, 7, 10, null] & 12 \\
+decision\_tree & model\_\_min\_samples\_leaf & [2, 5, 10, 20] & 12 \\
+decision\_tree & model\_\_min\_samples\_split & [2, 5, 10] & 12 \\
+random\_forest & model\_\_n\_estimators & [300, 500, 700] & 12 \\
+random\_forest & model\_\_max\_depth & [null, 6, 10, 14] & 12 \\
+random\_forest & model\_\_min\_samples\_leaf & [1, 2, 5, 10] & 12 \\
+random\_forest & model\_\_max\_features & ["sqrt", "log2", 0.5] & 12 \\
+xgboost & model\_\_n\_estimators & [250, 400, 600] & 30 \\
+xgboost & model\_\_max\_depth & [3, 4, 5, 6] & 30 \\
+xgboost & model\_\_learning\_rate & [0.03, 0.05, 0.1] & 30 \\
+xgboost & model\_\_subsample & [0.7, 0.85, 1.0] & 30 \\
+xgboost & model\_\_colsample\_bytree & [0.7, 0.85, 1.0] & 30 \\
+xgboost & model\_\_min\_child\_weight & [1, 3, 5] & 30 \\
+xgboost & model\_\_reg\_lambda & [1, 3, 10] & 30 \\
+lightgbm & model\_\_n\_estimators & [250, 400, 600] & 30 \\
+lightgbm & model\_\_num\_leaves & [15, 31, 63] & 30 \\
+lightgbm & model\_\_max\_depth & [-1, 5, 8, 12] & 30 \\
+lightgbm & model\_\_learning\_rate & [0.03, 0.05, 0.1] & 30 \\
+lightgbm & model\_\_subsample & [0.7, 0.85, 1.0] & 30 \\
+lightgbm & model\_\_colsample\_bytree & [0.7, 0.85, 1.0] & 30 \\
+lightgbm & model\_\_reg\_lambda & [0, 1, 5] & 30 \\
+catboost & model\_\_iterations & [250, 400, 600] & 30 \\
+catboost & model\_\_depth & [4, 6, 8] & 30 \\
+catboost & model\_\_learning\_rate & [0.03, 0.05, 0.1] & 30 \\
+catboost & model\_\_l2\_leaf\_reg & [1, 3, 5, 10] & 30 \\
+catboost & model\_\_random\_strength & [0, 0.5, 1] & 30 \\
+svm\_rbf & model\_\_C & [0.1, 0.3, 1, 3, 10, 30] & 12 \\
+svm\_rbf & model\_\_gamma & ["scale", "auto", 0.001, 0.01, 0.1] & 12 \\
+mlp & model\_\_hidden\_layer\_sizes & [[32], [64], [64, 32]] & 12 \\
+mlp & model\_\_alpha & [0.0001, 0.001, 0.01, 0.1] & 12 \\
+mlp & model\_\_learning\_rate\_init & [0.0003, 0.001, 0.003] & 12 \\
+extra\_trees & model\_\_n\_estimators & [300, 500, 700] & 12 \\
+extra\_trees & model\_\_max\_depth & [null, 6, 10, 14] & 12 \\
+extra\_trees & model\_\_min\_samples\_leaf & [1, 2, 5, 10] & 12 \\
+extra\_trees & model\_\_max\_features & ["sqrt", "log2", 0.5] & 12 \\
+hist\_gradient\_boosting & model\_\_learning\_rate & [0.03, 0.05, 0.1] & 30 \\
+hist\_gradient\_boosting & model\_\_max\_iter & [200, 350, 500] & 30 \\
+hist\_gradient\_boosting & model\_\_max\_leaf\_nodes & [15, 31, 63] & 30 \\
+hist\_gradient\_boosting & model\_\_min\_samples\_leaf & [10, 20, 30] & 30 \\
+hist\_gradient\_boosting & model\_\_l2\_regularization & [0, 0.1, 1, 5] & 30 \\
+\bottomrule
+\end{tabular}

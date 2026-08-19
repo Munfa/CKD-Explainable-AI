@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-07-23T18:47:39.289790+00:00",
+  "recommended_python": "3.12",
+  "package_pin_date": "2026-07-06",
+  "python_runtime": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "package_pins": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "imbalanced-learn": "0.14.2",
+    "xgboost": "3.3.0",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "shap": "0.52.0",
+    "lime": "0.2.0.1",
+    "matplotlib": "3.11.0",
+    "seaborn": "0.13.2",
+    "openpyxl": "3.1.5",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "installed_versions": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "imbalanced-learn": "0.14.1",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.10",
+    "shap": "0.51.0",
+    "lime": "0.2.0.1",
+    "matplotlib": "3.10.0",
+    "seaborn": "0.13.2",
+    "openpyxl": "3.1.5",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "requirements_file": "/kaggle/working/outputs_urinalysis/artifacts/requirements_latest_python312.txt"
+}

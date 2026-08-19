@@ -1,0 +1,40 @@
+{
+  "Dataset1_Urinalysis": {
+    "target": "d_status converted to CKD equals 1 and not CKD equals 0",
+    "group_column": null,
+    "removed_predictors": [
+      "p_id"
+    ],
+    "derived_predictors": [],
+    "continuous": [
+      "age",
+      "ph",
+      "sp_g"
+    ],
+    "categorical": [
+      "gender",
+      "u_clarity",
+      "albumin",
+      "glucose",
+      "sugar",
+      "kb",
+      "bpigment",
+      "ur_bi",
+      "blood",
+      "pus_cells",
+      "red_cells",
+      "epi_cells",
+      "mt",
+      "co",
+      "gc",
+      "bacteria",
+      "cc"
+    ],
+    "imputation": {
+      "continuous": "median inside CV fold",
+      "categorical": "most frequent inside CV fold"
+    },
+    "scaling": "StandardScaler only for logistic regression, SVM, and MLP inside CV fold",
+    "imbalance": "class weighting for most models and random oversampling for MLP"
+  }
+}

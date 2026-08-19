@@ -1,0 +1,7 @@
+predictor,main_analysis_action,reason
+patient_id,grouping_only,prevents patient leakage
+average_age,removed_patient_summary,may summarize later observations
+average_weight_kg,removed_patient_summary,may summarize later observations
+stored_bmi,replaced_by_recalculated_current_bmi,current BMI is recomputed from current height and weight
+current_ckd,eligibility_only,not used as a predictor
+future_ckd_label,target_only,future information cannot enter predictors

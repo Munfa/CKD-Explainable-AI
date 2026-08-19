@@ -1,0 +1,64 @@
+\begin{tabular}{lllrrrrr}
+\toprule
+experiment & setting & model & pr\_auc\_mean & pr\_auc\_std & mcc\_mean & sensitivity\_mean & specificity\_mean \\
+\midrule
+imbalance\_strategy & none & catboost & 0.576577 & 0.047854 & 0.555139 & 0.540541 & 0.980708 \\
+imbalance\_strategy & class\_weight & catboost & 0.561312 & 0.038603 & 0.541939 & 0.551351 & 0.976660 \\
+imbalance\_strategy & smotenc & catboost & 0.527912 & 0.030476 & 0.559473 & 0.524324 & 0.983203 \\
+imbalance\_strategy & class\_weight & lightgbm & 0.562792 & 0.039697 & 0.551415 & 0.562162 & 0.977292 \\
+imbalance\_strategy & none & lightgbm & 0.556225 & 0.034006 & 0.554972 & 0.583784 & 0.974500 \\
+imbalance\_strategy & smotenc & lightgbm & 0.540272 & 0.037218 & 0.513514 & 0.497297 & 0.979460 \\
+imbalance\_strategy & none & xgboost & 0.586246 & 0.041840 & 0.562844 & 0.594595 & 0.973828 \\
+imbalance\_strategy & class\_weight & xgboost & 0.565733 & 0.050779 & 0.530061 & 0.572973 & 0.971081 \\
+imbalance\_strategy & smotenc & xgboost & 0.532792 & 0.040570 & 0.533872 & 0.562162 & 0.972299 \\
+validation\_protocol & patient\_grouped & catboost & 0.575479 & 0.036927 & 0.550449 & NaN & NaN \\
+validation\_protocol & record\_level & catboost & 0.580153 & 0.077459 & 0.549351 & NaN & NaN \\
+validation\_protocol & patient\_grouped & lightgbm & 0.544726 & 0.035151 & 0.549232 & NaN & NaN \\
+validation\_protocol & record\_level & lightgbm & 0.563650 & 0.088435 & 0.541472 & NaN & NaN \\
+validation\_protocol & patient\_grouped & xgboost & 0.572861 & 0.040361 & 0.552377 & NaN & NaN \\
+validation\_protocol & record\_level & xgboost & 0.584761 & 0.076126 & 0.539408 & NaN & NaN \\
+feature\_sensitivity & current\_plus\_history & lightgbm & 0.544726 & 0.035151 & 0.549232 & NaN & NaN \\
+feature\_sensitivity & current\_only & lightgbm & 0.554870 & 0.034767 & 0.534671 & NaN & NaN \\
+feature\_sensitivity & recalculated\_bmi & lightgbm & 0.544726 & 0.035151 & 0.549232 & NaN & NaN \\
+feature\_sensitivity & stored\_bmi & lightgbm & 0.557057 & 0.043086 & 0.537852 & NaN & NaN \\
+calibration & sigmoid & lightgbm & 0.538100 & NaN & NaN & NaN & NaN \\
+calibration & isotonic & lightgbm & 0.545778 & NaN & NaN & NaN & NaN \\
+calibration & raw & lightgbm & 0.520904 & NaN & NaN & NaN & NaN \\
+seed\_stability & 7 & catboost & 0.566894 & 0.073228 & 0.566165 & NaN & NaN \\
+seed\_stability & 42 & catboost & 0.575479 & 0.036927 & 0.550449 & NaN & NaN \\
+seed\_stability & 2026 & catboost & 0.559306 & 0.055901 & 0.562689 & NaN & NaN \\
+seed\_stability & 7 & decision\_tree & 0.451492 & 0.096496 & 0.494605 & NaN & NaN \\
+seed\_stability & 42 & decision\_tree & 0.430740 & 0.030992 & 0.556144 & NaN & NaN \\
+seed\_stability & 2026 & decision\_tree & 0.443415 & 0.049109 & 0.506181 & NaN & NaN \\
+seed\_stability & 7 & dummy & 0.056013 & 0.003801 & -0.007259 & NaN & NaN \\
+seed\_stability & 42 & dummy & 0.058165 & 0.008178 & 0.025574 & NaN & NaN \\
+seed\_stability & 2026 & dummy & 0.054504 & 0.000431 & 0.003970 & NaN & NaN \\
+seed\_stability & 7 & extra\_trees & 0.500820 & 0.046246 & 0.513314 & NaN & NaN \\
+seed\_stability & 42 & extra\_trees & 0.508769 & 0.080107 & 0.469045 & NaN & NaN \\
+seed\_stability & 2026 & extra\_trees & 0.495908 & 0.105336 & 0.495068 & NaN & NaN \\
+seed\_stability & 7 & hist\_gradient\_boosting & 0.558790 & 0.080162 & 0.557968 & NaN & NaN \\
+seed\_stability & 42 & hist\_gradient\_boosting & 0.534888 & 0.049661 & 0.553802 & NaN & NaN \\
+seed\_stability & 2026 & hist\_gradient\_boosting & 0.528524 & 0.030093 & 0.549822 & NaN & NaN \\
+seed\_stability & 7 & lightgbm & 0.543379 & 0.074517 & 0.538948 & NaN & NaN \\
+seed\_stability & 42 & lightgbm & 0.544726 & 0.035151 & 0.549232 & NaN & NaN \\
+seed\_stability & 2026 & lightgbm & 0.563076 & 0.067859 & 0.559461 & NaN & NaN \\
+seed\_stability & 7 & logistic\_regression & 0.386033 & 0.035580 & 0.377473 & NaN & NaN \\
+seed\_stability & 42 & logistic\_regression & 0.386931 & 0.080763 & 0.355598 & NaN & NaN \\
+seed\_stability & 2026 & logistic\_regression & 0.372994 & 0.062091 & 0.374412 & NaN & NaN \\
+seed\_stability & 7 & mlp & 0.298329 & 0.064293 & 0.306093 & NaN & NaN \\
+seed\_stability & 42 & mlp & 0.317371 & 0.031851 & 0.271927 & NaN & NaN \\
+seed\_stability & 2026 & mlp & 0.283294 & 0.041043 & 0.306682 & NaN & NaN \\
+seed\_stability & 7 & random\_forest & 0.514814 & 0.045163 & 0.558708 & NaN & NaN \\
+seed\_stability & 42 & random\_forest & 0.535483 & 0.038607 & 0.562146 & NaN & NaN \\
+seed\_stability & 2026 & random\_forest & 0.521511 & 0.048289 & 0.563647 & NaN & NaN \\
+seed\_stability & 7 & svm\_rbf & 0.425366 & 0.065079 & 0.393631 & NaN & NaN \\
+seed\_stability & 42 & svm\_rbf & 0.439237 & 0.100087 & 0.406743 & NaN & NaN \\
+seed\_stability & 2026 & svm\_rbf & 0.415101 & 0.081115 & 0.395886 & NaN & NaN \\
+seed\_stability & 7 & time\_only\_logistic & 0.129001 & 0.027986 & 0.132511 & NaN & NaN \\
+seed\_stability & 42 & time\_only\_logistic & 0.130528 & 0.029398 & 0.134791 & NaN & NaN \\
+seed\_stability & 2026 & time\_only\_logistic & 0.118151 & 0.017799 & 0.122576 & NaN & NaN \\
+seed\_stability & 7 & xgboost & 0.556559 & 0.051724 & 0.552695 & NaN & NaN \\
+seed\_stability & 42 & xgboost & 0.572861 & 0.040361 & 0.552377 & NaN & NaN \\
+seed\_stability & 2026 & xgboost & 0.561010 & 0.045300 & 0.524188 & NaN & NaN \\
+\bottomrule
+\end{tabular}

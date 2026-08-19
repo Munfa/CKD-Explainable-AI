@@ -1,0 +1,21 @@
+,type,mean,std,median,IQR,mode,mode_pct,n_levels
+age,continuous,44.76052631578948,15.852653315344678,44.0,32.00 to 56.00,,,
+ph,continuous,5.5649999999999995,0.5614824422736043,5.5,5.00 to 6.00,,,
+sp_g,continuous,1.0159342105263156,0.005261839336291484,1.02,1.01 to 1.02,,,
+gender,categorical,,,,,0,51.3%,2
+u_clarity,categorical,,,,,1,63.9%,2
+albumin,categorical,,,,,1,59.7%,2
+glucose,categorical,,,,,0,92.9%,2
+sugar,categorical,,,,,0,83.4%,2
+kb,categorical,,,,,0,83.2%,2
+bpigment,categorical,,,,,0,83.2%,2
+ur_bi,categorical,,,,,1,90.0%,2
+blood,categorical,,,,,0,83.7%,2
+pus_cells,categorical,,,,,0,56.3%,2
+red_cells,categorical,,,,,1,57.1%,2
+epi_cells,categorical,,,,,1,59.7%,2
+mt,categorical,,,,,0,52.4%,2
+co,categorical,,,,,0,70.5%,2
+gc,categorical,,,,,0,75.3%,2
+bacteria,categorical,,,,,0,67.6%,2
+cc,categorical,,,,,1,88.2%,2

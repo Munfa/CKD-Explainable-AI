@@ -1,0 +1,17 @@
+# Generated for this CKD journal notebook on 2026-07-06
+# Recommended Python runtime: 3.12
+numpy==2.5.1
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+imbalanced-learn==0.14.2
+xgboost==3.3.0
+lightgbm==4.6.0
+catboost==1.2.10
+shap==0.52.0
+lime==0.2.0.1
+matplotlib==3.11.0
+seaborn==0.13.2
+openpyxl==3.1.5
+joblib==1.5.3
+threadpoolctl==3.6.0

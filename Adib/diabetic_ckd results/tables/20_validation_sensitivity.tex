@@ -1,0 +1,12 @@
+\begin{tabular}{llrrrr}
+\toprule
+model & validation\_protocol & pr\_auc\_mean & pr\_auc\_std & roc\_auc\_mean & mcc\_mean \\
+\midrule
+catboost & patient\_grouped & 0.575479 & 0.036927 & 0.900770 & 0.550449 \\
+catboost & record\_level & 0.580153 & 0.077459 & 0.902590 & 0.549351 \\
+lightgbm & patient\_grouped & 0.544726 & 0.035151 & 0.893007 & 0.549232 \\
+lightgbm & record\_level & 0.563650 & 0.088435 & 0.895615 & 0.541472 \\
+xgboost & patient\_grouped & 0.572861 & 0.040361 & 0.899844 & 0.552377 \\
+xgboost & record\_level & 0.584761 & 0.076126 & 0.904754 & 0.539408 \\
+\bottomrule
+\end{tabular}

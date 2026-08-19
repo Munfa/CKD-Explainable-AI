@@ -1,0 +1,3 @@
+dataset,case,row_index,true_class,pred_class,pred_proba,top_shap_support,top_shap_oppose,shap_lime_sign_agreement
+Dataset1_Urinalysis,TP,152,1,1,0.9042553447149139,"pus_cells, bacteria, co","albumin, mt, kb",1.0
+Dataset1_Urinalysis,FN,117,1,0,0.369787317143494,"co, blood, red_cells","pus_cells, albumin, bacteria",1.0

@@ -1,0 +1,15 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+model & imbalance\_strategy & pr\_auc\_mean & pr\_auc\_std & f1\_mean & mcc\_mean & sensitivity\_mean & specificity\_mean \\
+\midrule
+catboost & none & 0.576577 & 0.047854 & 0.575130 & 0.555139 & 0.540541 & 0.980708 \\
+catboost & class\_weight & 0.561312 & 0.038603 & 0.563328 & 0.541939 & 0.551351 & 0.976660 \\
+catboost & smotenc & 0.527912 & 0.030476 & 0.575903 & 0.559473 & 0.524324 & 0.983203 \\
+lightgbm & class\_weight & 0.562792 & 0.039697 & 0.573034 & 0.551415 & 0.562162 & 0.977292 \\
+lightgbm & none & 0.556225 & 0.034006 & 0.578353 & 0.554972 & 0.583784 & 0.974500 \\
+lightgbm & smotenc & 0.540272 & 0.037218 & 0.535480 & 0.513514 & 0.497297 & 0.979460 \\
+xgboost & none & 0.586246 & 0.041840 & 0.582637 & 0.562844 & 0.594595 & 0.973828 \\
+xgboost & class\_weight & 0.565733 & 0.050779 & 0.551569 & 0.530061 & 0.572973 & 0.971081 \\
+xgboost & smotenc & 0.532792 & 0.040570 & 0.549794 & 0.533872 & 0.562162 & 0.972299 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,344 @@
+[
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_dataset_fingerprints.csv",
+    "size_bytes": 407,
+    "sha256": "8dbfd739e0b1e11c34cb700cee9ccc2c47b8fa5cfdce8f9dd50c6cf5ccf45dc8"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_environment_versions.csv",
+    "size_bytes": 371,
+    "sha256": "17c1fbb33a3213a8a642f311d21c79e3f17966f0aecd5c60c0705b5f13ce45ea"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_final_model_parameters.csv",
+    "size_bytes": 474,
+    "sha256": "658e61fafd7e270def53736d4d097f072763aee8a3c405a6bf6646474acca02f"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_hyperparameter_search_space.csv",
+    "size_bytes": 1771,
+    "sha256": "8a9e20385ab597ae0fa7e7b4619d2302d71fbce1a3d0efcf2ab6035be0bdac21"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_hyperparameters_per_fold.csv",
+    "size_bytes": 45801,
+    "sha256": "c1a3410dff0a36d4e39e233c2e49593d603b02baef111fbd3dda1c942e6089ca"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_hyperparameters_per_fold.tex",
+    "size_bytes": 29519,
+    "sha256": "f91673196dd564b88b1e0931d7dd24ffd6530deab8ebb9717f8264b489ea127f"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_preprocessing_features.csv",
+    "size_bytes": 1628,
+    "sha256": "9c5ea251581dce0977bd1bf565183f7e0739063364fd210f53291fc3c1f11624"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/journal_shap_interaction_status.csv",
+    "size_bytes": 137,
+    "sha256": "c11cb34cd15f3a9a0d4860c26e04a56730c003986e50a6fc771b68678d8b5615"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_calibration.csv",
+    "size_bytes": 153,
+    "sha256": "c4ce7704f5ffbb5fe0434cace542bd0b3b381d3c0d0bdac288d780712b4174a4"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_calibration.tex",
+    "size_bytes": 220,
+    "sha256": "3bc49b7a882484581bb7e558a329df0837686b02230dcc2a422c8870fbe0927a"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_descriptive_dataset1.csv",
+    "size_bytes": 829,
+    "sha256": "ecf8de80559f7c43515738d7fc228d7e2b3b0f459da871bf9218c1667c4ee462"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_descriptive_dataset1.tex",
+    "size_bytes": 1458,
+    "sha256": "75635041da8b50e207dde140590ce7329f8c741d52437d7096be3c0baa21e761"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_local_cases.csv",
+    "size_bytes": 319,
+    "sha256": "2946b4fca9005e61dc4a592bb9acc2615478595fd5314175949355a3783a417e"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_permutation_Dataset1_Urinalysis.csv",
+    "size_bytes": 1082,
+    "sha256": "02ee03857ce2ab55bd7025a120d8b3157e580c78dfbfcea0816cff68ff916506"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_permutation_Dataset1_Urinalysis.tex",
+    "size_bytes": 769,
+    "sha256": "0d1df07aed8ec056dc0634ea9c19bc5a84e339ad1cc120ba18b82508331e5a91"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_runtime.csv",
+    "size_bytes": 1455,
+    "sha256": "9f4bba87b4c949899c6f48f761a4111622ff12ff532ace84b16917c328c54035"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_shap_summary_Dataset1_Urinalysis.csv",
+    "size_bytes": 1886,
+    "sha256": "657a1c5c844fd4770affa6943e6c1ddd7000a21c888a58885d8263090ba02702"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_shap_summary_Dataset1_Urinalysis.tex",
+    "size_bytes": 1559,
+    "sha256": "64b994926e6375e3b4f20ce9df83a28b027eb479937d096bbcab613d42ed6c5f"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/supp_statistical_tests.csv",
+    "size_bytes": 1100,
+    "sha256": "81dee9341eaebe4d69ba9d269fb2e2156c06214a874467292dc79c774ce80fde"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table1_dataset_characteristics.csv",
+    "size_bytes": 346,
+    "sha256": "9a37fc2586e295c2c9c651fc3f02ad80c2062d24e0528930f8a46c12ec44da1f"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table1_dataset_characteristics.tex",
+    "size_bytes": 476,
+    "sha256": "f609468261ea206a2aaf98fdb96adc2f8082e73de28dfdfce73c99c6cbedd44d"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table2_dataset1_performance.csv",
+    "size_bytes": 1119,
+    "sha256": "2a2fc83ae3332e2dd6da0ca651f530136deb8f0a764eb647deeeb6ec940cd53d"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table2_dataset1_performance.tex",
+    "size_bytes": 1389,
+    "sha256": "1983ce414acf04dce62e175286ce770580df45a69f3d96d49816b205cc989824"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table4_robustness.csv",
+    "size_bytes": 383,
+    "sha256": "b0c526142187305f925e4dbd7f509c206834fa068056ee1915bb728ce7025a24"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table4_robustness.tex",
+    "size_bytes": 387,
+    "sha256": "fda0102df9cb66458d4c83875e40d6b9f82536bafe3958465df6a19a121609f0"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table5_explanations_Dataset1_Urinalysis.csv",
+    "size_bytes": 823,
+    "sha256": "d2851c43af247b38f59c289321ba0990f284f17a039e90fe83459a665d0cbe7d"
+  },
+  {
+    "kind": "table",
+    "relative_path": "tables/table5_explanations_Dataset1_Urinalysis.tex",
+    "size_bytes": 888,
+    "sha256": "b72959af8db06e292fb6f0f7bd00ffd8d36a7097d0dfba51d4f8940b0a0b03b6"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure1_workflow.pdf",
+    "size_bytes": 19117,
+    "sha256": "8027dfe7578b5ca43b5c7256c896fe1217eb25f8fe00948d4a47e2de544bb4d4"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure1_workflow.png",
+    "size_bytes": 265628,
+    "sha256": "416d9dac8776482385510bf3fd317295604d60dc900a882f1a016bc10e1d90f6"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure2_roc_pr.pdf",
+    "size_bytes": 25229,
+    "sha256": "d382e0b0fdbdb15cfad3ae21668f9d4dbbd2b51bd737b2552e9acce3783ccb07"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure2_roc_pr.png",
+    "size_bytes": 315660,
+    "sha256": "a0580348074dd46521ba66744f62d525ac29f6382450e5ead3c75be21e0b51f7"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure3_confusion_calibration.pdf",
+    "size_bytes": 20960,
+    "sha256": "7c4ab05e19bcbdaadacadd68c75a4b1be96e44989087ca358e26cbd371194f0e"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure3_confusion_calibration.png",
+    "size_bytes": 192028,
+    "sha256": "fd91ead4032e9647527ed92c4d879a17c3668e122afd259b87b9ef61ba9f76ee"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure4_shap_beeswarm.pdf",
+    "size_bytes": 313947,
+    "sha256": "a56015570e99c531743c080737d737f188009cdfef10f5d72e7e02355b4eef0c"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure4_shap_beeswarm.png",
+    "size_bytes": 350187,
+    "sha256": "c2c6e2012726f98252ff21eaa371d759276d387048ed695771dbd0e926f4941a"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure5_pdp_ice.pdf",
+    "size_bytes": 1663191,
+    "sha256": "9d3f7ca1f10c9579add9cce8ac4cd9ca747a642715334d806ada24f92f08a32c"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure5_pdp_ice.png",
+    "size_bytes": 1813859,
+    "sha256": "b4c9a9e3307abc7421b4b8bef0bdc1c56514f1bcce1c10075cf7e0f70c4f9ac3"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure6_local_explanations.pdf",
+    "size_bytes": 416455,
+    "sha256": "c5b630fee2394ec0f8da656996689ebeda9e2ff6271b141ec36e2eab9b6d680e"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/figure6_local_explanations.png",
+    "size_bytes": 430859,
+    "sha256": "311929184dd2026409c62d9375b2cdb60fadbabfac2f10be1d5a681d24a65ad3"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/local_lime_Dataset1_Urinalysis_FN.png",
+    "size_bytes": 90701,
+    "sha256": "170fc1ab2b9ed556c959b6a186309e3c40bfc9bc4ef267d9a18bd24c8533e3d6"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/local_lime_Dataset1_Urinalysis_TP.png",
+    "size_bytes": 86832,
+    "sha256": "7402bac92038d5a19a04438624a107d4e6fce79748e5a9232df508897f594ec7"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/local_shap_Dataset1_Urinalysis_FN.png",
+    "size_bytes": 200476,
+    "sha256": "c8306febd4175dde0780fae72b4925ab6775538ee5a3b2e2029835e54db62593"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/local_shap_Dataset1_Urinalysis_TP.png",
+    "size_bytes": 197922,
+    "sha256": "8b72f622a8759e0387736a0c6b27076c08e6a67c78ad3541605d2153cf690853"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/pdp_ice_Dataset1_Urinalysis.png",
+    "size_bytes": 1589076,
+    "sha256": "bd439488900173bda84199849ac0abf9a8682cfa1d62c64db2ce9c0a6fece363"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/shap_beeswarm_Dataset1_Urinalysis.png",
+    "size_bytes": 260502,
+    "sha256": "8b1e328d36c6a73993a91f04d931482d150d3d1cbc2529aedb60f35efdbe8cf0"
+  },
+  {
+    "kind": "figure",
+    "relative_path": "figures/supp_learning_curve_Dataset1_Urinalysis.png",
+    "size_bytes": 100561,
+    "sha256": "907a2a66aa6220901bb95c1ad86d2c7980f0ca575dc68a6bf54c3d07ccd195d3"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/dataset_fingerprints.json",
+    "size_bytes": 1713,
+    "sha256": "10eb36f1330b89433b4f67ab8807693195a3ebcddaed0b4d90e6fc1ea1bd9125"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/environment_report.json",
+    "size_bytes": 1174,
+    "sha256": "b0e871e369a8461c1d5f5f70a990b08aba38ebaf3a2cb434aea13241dc6b2a43"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/final_model_parameters.json",
+    "size_bytes": 584,
+    "sha256": "9e412a7cbc03a87e879b586ceba31905d9e738b8464625387d362d0f2da0a6af"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/hyperparameter_search_space.json",
+    "size_bytes": 1862,
+    "sha256": "c7078bb5a2e8bb4d468ab024c138fe90e4e6c270d4abc0ff1f2f1514777f6751"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/journal_hyperparameters_per_fold.json",
+    "size_bytes": 109486,
+    "sha256": "e877065ccc80b97ebed8cd9b0e12d25406c53f60dfabe4b8c4a431a184f855d2"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/nested_cv_split_indices.json",
+    "size_bytes": 511397,
+    "sha256": "f40139517f6c0722aaa21699cae73d272adb61657ce8bf599772d7c815e35039"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/preprocessing_details.json",
+    "size_bytes": 868,
+    "sha256": "6d72035db71471d49ac6131d9935f98f2a37be1e9f8d68c1f62b4f1f46d44d28"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/reproducibility_report.json",
+    "size_bytes": 7698,
+    "sha256": "24f1f12921b24f8e4c46f294861183e0d937c41d0fdb831c12e3954870e05a64"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/requirements_latest_python312.txt",
+    "size_bytes": 338,
+    "sha256": "284f23ad0f8cf3f5384379fa9fb36095c4e6d36857e916b699b0fd43de09c2ad"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/results.pkl",
+    "size_bytes": 26416,
+    "sha256": "a6556a70057a18da7197dc33992c758dc99d077f5cc98f58db44bf7e9bdaf10b"
+  },
+  {
+    "kind": "artifact",
+    "relative_path": "artifacts/selection.json",
+    "size_bytes": 130,
+    "sha256": "1ab238bcdda10e0501c83f0c94070d07cbe87a634d8d516a74179fddcde5b12b"
+  }
+]

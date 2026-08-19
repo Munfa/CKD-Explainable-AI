@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-07-30T00:50:15.817067",
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "profile": "paper",
+  "primary_seed": 42,
+  "stability_seeds": [
+    42,
+    7,
+    2026
+  ],
+  "dataset_path": "/kaggle/input/datasets/miftahuladib/datasets-ckd/DiabeticCKD_dataset (1).csv",
+  "dataset_sha256": "9cef0eb4cd3279c36f9b4816c6a2ccfd480345ee3a57e2dc5c9f722e92793618",
+  "thread_environment": {
+    "PYTHONHASHSEED": "42",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "n_jobs": 1,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "split_artifact": "artifacts/nested_cv_split_indices.json",
+  "raw_data_artifact": "raw_data/Dataset2_raw.csv",
+  "preprocessed_data_artifact": "preprocessed_data/Dataset2_preprocessed.csv",
+  "package_versions": [
+    {
+      "package": "numpy",
+      "version": "2.0.2",
+      "available": true
+    },
+    {
+      "package": "pandas",
+      "version": "2.3.3",
+      "available": true
+    },
+    {
+      "package": "scipy",
+      "version": "1.16.3",
+      "available": true
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.6.1",
+      "available": true
+    },
+    {
+      "package": "imbalanced-learn",
+      "version": "0.14.1",
+      "available": true
+    },
+    {
+      "package": "matplotlib",
+      "version": "3.10.0",
+      "available": true
+    },
+    {
+      "package": "xgboost",
+      "version": "3.2.0",
+      "available": true
+    },
+    {
+      "package": "lightgbm",
+      "version": "4.6.0",
+      "available": true
+    },
+    {
+      "package": "catboost",
+      "version": "1.2.10",
+      "available": true
+    },
+    {
+      "package": "shap",
+      "version": "0.51.0",
+      "available": true
+    },
+    {
+      "package": "lime",
+      "version": "0.2.0.1",
+      "available": true
+    },
+    {
+      "package": "joblib",
+      "version": "1.5.3",
+      "available": true
+    },
+    {
+      "package": "pyarrow",
+      "version": "24.0.0",
+      "available": true
+    },
+    {
+      "package": "tabulate",
+      "version": "0.9.0",
+      "available": true
+    },
+    {
+      "package": "Pillow",
+      "version": "11.3.0",
+      "available": true
+    },
+    {
+      "package": "jupyter",
+      "version": "",
+      "available": false
+    },
+    {
+      "package": "nbformat",
+      "version": "5.10.4",
+      "available": true
+    }
+  ],
+  "determinism_note": "Seeds, split indices, package versions, and single thread defaults are saved. Exact equality can still depend on operating system and low level numerical libraries."
+}

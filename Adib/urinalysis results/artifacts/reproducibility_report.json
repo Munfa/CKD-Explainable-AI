@@ -1,0 +1,276 @@
+{
+  "created_utc": "2026-07-23T19:30:51.089896+00:00",
+  "profile": "paper",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "rng": 42,
+  "n_jobs": 1,
+  "outer_splits": 5,
+  "inner_splits": 3,
+  "environment": {
+    "created_utc": "2026-07-23T18:47:39.289790+00:00",
+    "recommended_python": "3.12",
+    "package_pin_date": "2026-07-06",
+    "python_runtime": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+    "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+    "package_pins": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.3",
+      "scipy": "1.18.0",
+      "scikit-learn": "1.9.0",
+      "imbalanced-learn": "0.14.2",
+      "xgboost": "3.3.0",
+      "lightgbm": "4.6.0",
+      "catboost": "1.2.10",
+      "shap": "0.52.0",
+      "lime": "0.2.0.1",
+      "matplotlib": "3.11.0",
+      "seaborn": "0.13.2",
+      "openpyxl": "3.1.5",
+      "joblib": "1.5.3",
+      "threadpoolctl": "3.6.0"
+    },
+    "installed_versions": {
+      "numpy": "2.0.2",
+      "pandas": "2.3.3",
+      "scipy": "1.16.3",
+      "scikit-learn": "1.6.1",
+      "imbalanced-learn": "0.14.1",
+      "xgboost": "3.2.0",
+      "lightgbm": "4.6.0",
+      "catboost": "1.2.10",
+      "shap": "0.51.0",
+      "lime": "0.2.0.1",
+      "matplotlib": "3.10.0",
+      "seaborn": "0.13.2",
+      "openpyxl": "3.1.5",
+      "joblib": "1.5.3",
+      "threadpoolctl": "3.6.0"
+    },
+    "requirements_file": "/kaggle/working/outputs_urinalysis/artifacts/requirements_latest_python312.txt"
+  },
+  "dataset_fingerprints": [
+    {
+      "dataset": "Dataset1_Urinalysis",
+      "file_path": "/kaggle/input/datasets/miftahuladib/datasets-ckd/CKD_dataset.xlsx",
+      "file_sha256": "c2c4f04111ed4b06412a8309f898d85c221eea59c0c3a2ba84decb2850b182fb",
+      "raw_rows": 380,
+      "raw_columns": 22,
+      "processed_rows": 380,
+      "processed_features": 20,
+      "positive_count": 239,
+      "negative_count": 141,
+      "positive_rate": 0.6289473684210526,
+      "missing_raw": 0,
+      "missing_processed": 0,
+      "grouped": false,
+      "unique_groups": null,
+      "primary_metric": "roc_auc",
+      "raw_target_counts": {
+        "ckd": 239,
+        "notckd": 141
+      },
+      "raw_columns_list": [
+        "p_id",
+        "age",
+        "gender",
+        "u_clarity",
+        "ph",
+        "sp_g",
+        "albumin",
+        "glucose",
+        "sugar",
+        "kb",
+        "bpigment",
+        "ur_bi",
+        "blood",
+        "pus_cells",
+        "red_cells",
+        "epi_cells",
+        "mt",
+        "co",
+        "gc",
+        "bacteria",
+        "cc",
+        "d_status"
+      ],
+      "processed_feature_order": [
+        "age",
+        "ph",
+        "sp_g",
+        "gender",
+        "u_clarity",
+        "albumin",
+        "glucose",
+        "sugar",
+        "kb",
+        "bpigment",
+        "ur_bi",
+        "blood",
+        "pus_cells",
+        "red_cells",
+        "epi_cells",
+        "mt",
+        "co",
+        "gc",
+        "bacteria",
+        "cc"
+      ],
+      "continuous_features": [
+        "age",
+        "ph",
+        "sp_g"
+      ],
+      "categorical_features": [
+        "gender",
+        "u_clarity",
+        "albumin",
+        "glucose",
+        "sugar",
+        "kb",
+        "bpigment",
+        "ur_bi",
+        "blood",
+        "pus_cells",
+        "red_cells",
+        "epi_cells",
+        "mt",
+        "co",
+        "gc",
+        "bacteria",
+        "cc"
+      ]
+    }
+  ],
+  "preprocessing_details": {
+    "Dataset1_Urinalysis": {
+      "target": "d_status converted to CKD equals 1 and not CKD equals 0",
+      "group_column": null,
+      "removed_predictors": [
+        "p_id"
+      ],
+      "derived_predictors": [],
+      "continuous": [
+        "age",
+        "ph",
+        "sp_g"
+      ],
+      "categorical": [
+        "gender",
+        "u_clarity",
+        "albumin",
+        "glucose",
+        "sugar",
+        "kb",
+        "bpigment",
+        "ur_bi",
+        "blood",
+        "pus_cells",
+        "red_cells",
+        "epi_cells",
+        "mt",
+        "co",
+        "gc",
+        "bacteria",
+        "cc"
+      ],
+      "imputation": {
+        "continuous": "median inside CV fold",
+        "categorical": "most frequent inside CV fold"
+      },
+      "scaling": "StandardScaler only for logistic regression, SVM, and MLP inside CV fold",
+      "imbalance": "class weighting for most models and random oversampling for MLP"
+    }
+  },
+  "search_space": {
+    "logreg": {
+      "clf__C": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2f99e9100>"
+    },
+    "decision_tree": {
+      "clf__max_depth": "[2, 3, 4, 6, 8, 12, None]",
+      "clf__min_samples_leaf": "[1, 2, 5, 10, 20]",
+      "clf__min_samples_split": "[2, 5, 10, 20]",
+      "clf__ccp_alpha": "[0.0, 0.0001, 0.001, 0.01]"
+    },
+    "random_forest": {
+      "clf__n_estimators": "[200, 400, 600]",
+      "clf__max_depth": "[None, 6, 10, 16]",
+      "clf__max_features": "['sqrt', 'log2', 0.5]",
+      "clf__min_samples_leaf": "[1, 2, 5]"
+    },
+    "xgboost": {
+      "clf__n_estimators": "[200, 400, 600]",
+      "clf__max_depth": "[3, 4, 6, 8]",
+      "clf__learning_rate": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2f99e9100>",
+      "clf__subsample": "[0.7, 0.85, 1.0]",
+      "clf__colsample_bytree": "[0.7, 0.85, 1.0]",
+      "clf__min_child_weight": "[1, 3, 5]",
+      "clf__reg_lambda": "[0.5, 1.0, 2.0, 5.0]"
+    },
+    "lightgbm": {
+      "clf__n_estimators": "[200, 400, 600]",
+      "clf__num_leaves": "[15, 31, 63]",
+      "clf__max_depth": "[-1, 4, 8]"
+    },
+    "catboost": {
+      "clf__depth": "[4, 6, 8]",
+      "clf__learning_rate": "[0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.2, 0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.3]",
+      "clf__iterations": "[200, 400, 600]",
+      "clf__l2_leaf_reg": "[1, 3, 5, 9]"
+    },
+    "svm": {
+      "clf__C": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2f99e9100>",
+      "clf__gamma": "['scale', 0.001, 0.01, 0.1]"
+    },
+    "mlp": {
+      "clf__hidden_layer_sizes": "[(64,), (128,), (64, 32), (128, 64)]",
+      "clf__alpha": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2dd485b50>",
+      "clf__learning_rate_init": "[0.001, 0.0005]",
+      "clf__batch_size": "[32, 64, 128]"
+    }
+  },
+  "selection": {
+    "Dataset1_Urinalysis": {
+      "selected": "random_forest",
+      "selected_tree": "random_forest",
+      "primary": "roc_auc"
+    }
+  },
+  "final_model_parameters": [
+    {
+      "dataset": "Dataset1_Urinalysis",
+      "model": "random_forest",
+      "seed": 0,
+      "imbalance": "balanced",
+      "primary_metric": "roc_auc",
+      "n_iter": 15,
+      "best_score": 0.9676704596462878,
+      "best_params": {
+        "clf__n_estimators": 600,
+        "clf__min_samples_leaf": 1,
+        "clf__max_features": "sqrt",
+        "clf__max_depth": null
+      },
+      "search_space": {
+        "clf__n_estimators": "[200, 400, 600]",
+        "clf__max_depth": "[None, 6, 10, 16]",
+        "clf__max_features": "['sqrt', 'log2', 0.5]",
+        "clf__min_samples_leaf": "[1, 2, 5]"
+      }
+    }
+  ],
+  "shap_interaction_status": [
+    {
+      "dataset": "Dataset1_Urinalysis",
+      "status": "not applicable",
+      "path": null,
+      "reason": "SHAP interaction analysis was not part of the urinalysis dataset workflow"
+    }
+  ],
+  "statistical_tests_file": "/kaggle/working/outputs_urinalysis/tables/supp_statistical_tests.csv",
+  "fold_hyperparameter_file": "/kaggle/working/outputs_urinalysis/tables/journal_hyperparameters_per_fold.csv",
+  "split_indices_file": "/kaggle/working/outputs_urinalysis/artifacts/nested_cv_split_indices.json"
+}

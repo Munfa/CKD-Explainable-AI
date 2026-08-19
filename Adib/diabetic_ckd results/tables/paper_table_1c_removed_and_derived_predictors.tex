@@ -1,0 +1,12 @@
+\begin{tabular}{lll}
+\toprule
+predictor & main\_analysis\_action & reason \\
+\midrule
+patient\_id & grouping\_only & prevents patient leakage \\
+average\_age & removed\_patient\_summary & may summarize later observations \\
+average\_weight\_kg & removed\_patient\_summary & may summarize later observations \\
+stored\_bmi & replaced\_by\_recalculated\_current\_bmi & current BMI is recomputed from current height and weight \\
+current\_ckd & eligibility\_only & not used as a predictor \\
+future\_ckd\_label & target\_only & future information cannot enter predictors \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,21 @@
+dataset,feature_order,feature,feature_type,feature_category,imputation,scaled_for_models
+Dataset1_Urinalysis,1,age,continuous,Demographic,median,"logreg, mlp, svm"
+Dataset1_Urinalysis,2,ph,continuous,Urinalysis,median,"logreg, mlp, svm"
+Dataset1_Urinalysis,3,sp_g,continuous,Urinalysis,median,"logreg, mlp, svm"
+Dataset1_Urinalysis,4,gender,categorical,Demographic,most_frequent,not scaled
+Dataset1_Urinalysis,5,u_clarity,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,6,albumin,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,7,glucose,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,8,sugar,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,9,kb,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,10,bpigment,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,11,ur_bi,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,12,blood,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,13,pus_cells,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,14,red_cells,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,15,epi_cells,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,16,mt,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,17,co,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,18,gc,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,19,bacteria,categorical,Urinalysis,most_frequent,not scaled
+Dataset1_Urinalysis,20,cc,categorical,Urinalysis,most_frequent,not scaled

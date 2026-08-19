@@ -1,0 +1,66 @@
+\begin{tabular}{lrrrllr}
+\toprule
+model & outer\_fold & inner\_pr\_auc & tune\_iterations & best\_parameters & output\_tag & run\_seed \\
+\midrule
+dummy & 1 & NaN & 0 & \{\} & primary & 42 \\
+dummy & 2 & NaN & 0 & \{\} & primary & 42 \\
+dummy & 3 & NaN & 0 & \{\} & primary & 42 \\
+dummy & 4 & NaN & 0 & \{\} & primary & 42 \\
+dummy & 5 & NaN & 0 & \{\} & primary & 42 \\
+time\_only\_logistic & 1 & NaN & 0 & \{\} & primary & 42 \\
+time\_only\_logistic & 2 & NaN & 0 & \{\} & primary & 42 \\
+time\_only\_logistic & 3 & NaN & 0 & \{\} & primary & 42 \\
+time\_only\_logistic & 4 & NaN & 0 & \{\} & primary & 42 \\
+time\_only\_logistic & 5 & NaN & 0 & \{\} & primary & 42 \\
+logistic\_regression & 1 & 0.347424 & 12 & \{"model\_\_C": 0.01\} & primary & 42 \\
+logistic\_regression & 2 & 0.332759 & 12 & \{"model\_\_C": 0.01\} & primary & 42 \\
+logistic\_regression & 3 & 0.318355 & 12 & \{"model\_\_C": 0.01\} & primary & 42 \\
+logistic\_regression & 4 & 0.343944 & 12 & \{"model\_\_C": 0.01\} & primary & 42 \\
+logistic\_regression & 5 & 0.366215 & 12 & \{"model\_\_C": 0.01\} & primary & 42 \\
+decision\_tree & 1 & 0.411128 & 12 & \{"model\_\_criterion": "gini", "model\_\_max\_depth": 3, "model\_\_min\_samples\_leaf": 2, "model\_\_min\_samples\_split": 10\} & primary & 42 \\
+decision\_tree & 2 & 0.458837 & 12 & \{"model\_\_criterion": "entropy", "model\_\_max\_depth": 3, "model\_\_min\_samples\_leaf": 5, "model\_\_min\_samples\_split": 10\} & primary & 42 \\
+decision\_tree & 3 & 0.468578 & 12 & \{"model\_\_criterion": "gini", "model\_\_max\_depth": 10, "model\_\_min\_samples\_leaf": 20, "model\_\_min\_samples\_split": 2\} & primary & 42 \\
+decision\_tree & 4 & 0.420219 & 12 & \{"model\_\_criterion": "entropy", "model\_\_max\_depth": 10, "model\_\_min\_samples\_leaf": 20, "model\_\_min\_samples\_split": 5\} & primary & 42 \\
+decision\_tree & 5 & 0.452933 & 12 & \{"model\_\_criterion": "entropy", "model\_\_max\_depth": 3, "model\_\_min\_samples\_leaf": 5, "model\_\_min\_samples\_split": 2\} & primary & 42 \\
+random\_forest & 1 & 0.497119 & 12 & \{"model\_\_max\_depth": 6, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 10, "model\_\_n\_estimators": 700\} & primary & 42 \\
+random\_forest & 2 & 0.559109 & 12 & \{"model\_\_max\_depth": 14, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 10, "model\_\_n\_estimators": 700\} & primary & 42 \\
+random\_forest & 3 & 0.496953 & 12 & \{"model\_\_max\_depth": null, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 10, "model\_\_n\_estimators": 700\} & primary & 42 \\
+random\_forest & 4 & 0.534366 & 12 & \{"model\_\_max\_depth": 14, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 5, "model\_\_n\_estimators": 500\} & primary & 42 \\
+random\_forest & 5 & 0.507773 & 12 & \{"model\_\_max\_depth": 14, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 1, "model\_\_n\_estimators": 300\} & primary & 42 \\
+xgboost & 1 & 0.548486 & 30 & \{"model\_\_colsample\_bytree": 1.0, "model\_\_learning\_rate": 0.1, "model\_\_max\_depth": 3, "model\_\_min\_child\_weight": 5, "model\_\_n\_estimators": 600, "model\_\_reg\_lambda": 3, "model\_\_subsample": 0.7\} & primary & 42 \\
+xgboost & 2 & 0.588630 & 30 & \{"model\_\_colsample\_bytree": 1.0, "model\_\_learning\_rate": 0.05, "model\_\_max\_depth": 6, "model\_\_min\_child\_weight": 1, "model\_\_n\_estimators": 250, "model\_\_reg\_lambda": 10, "model\_\_subsample": 0.7\} & primary & 42 \\
+xgboost & 3 & 0.563169 & 30 & \{"model\_\_colsample\_bytree": 0.85, "model\_\_learning\_rate": 0.05, "model\_\_max\_depth": 4, "model\_\_min\_child\_weight": 3, "model\_\_n\_estimators": 250, "model\_\_reg\_lambda": 3, "model\_\_subsample": 0.7\} & primary & 42 \\
+xgboost & 4 & 0.587278 & 30 & \{"model\_\_colsample\_bytree": 0.7, "model\_\_learning\_rate": 0.03, "model\_\_max\_depth": 5, "model\_\_min\_child\_weight": 3, "model\_\_n\_estimators": 400, "model\_\_reg\_lambda": 10, "model\_\_subsample": 0.7\} & primary & 42 \\
+xgboost & 5 & 0.581962 & 30 & \{"model\_\_colsample\_bytree": 0.7, "model\_\_learning\_rate": 0.05, "model\_\_max\_depth": 4, "model\_\_min\_child\_weight": 3, "model\_\_n\_estimators": 250, "model\_\_reg\_lambda": 1, "model\_\_subsample": 0.7\} & primary & 42 \\
+lightgbm & 1 & 0.570543 & 30 & \{"model\_\_colsample\_bytree": 1.0, "model\_\_learning\_rate": 0.03, "model\_\_max\_depth": -1, "model\_\_n\_estimators": 400, "model\_\_num\_leaves": 15, "model\_\_reg\_lambda": 5, "model\_\_subsample": 0.7\} & primary & 42 \\
+lightgbm & 2 & 0.571586 & 30 & \{"model\_\_colsample\_bytree": 0.85, "model\_\_learning\_rate": 0.1, "model\_\_max\_depth": -1, "model\_\_n\_estimators": 600, "model\_\_num\_leaves": 31, "model\_\_reg\_lambda": 5, "model\_\_subsample": 0.85\} & primary & 42 \\
+lightgbm & 3 & 0.595631 & 30 & \{"model\_\_colsample\_bytree": 0.7, "model\_\_learning\_rate": 0.03, "model\_\_max\_depth": 8, "model\_\_n\_estimators": 400, "model\_\_num\_leaves": 15, "model\_\_reg\_lambda": 1, "model\_\_subsample": 0.7\} & primary & 42 \\
+lightgbm & 4 & 0.564812 & 30 & \{"model\_\_colsample\_bytree": 0.85, "model\_\_learning\_rate": 0.05, "model\_\_max\_depth": -1, "model\_\_n\_estimators": 600, "model\_\_num\_leaves": 15, "model\_\_reg\_lambda": 0, "model\_\_subsample": 0.85\} & primary & 42 \\
+lightgbm & 5 & 0.597381 & 30 & \{"model\_\_colsample\_bytree": 0.7, "model\_\_learning\_rate": 0.03, "model\_\_max\_depth": 12, "model\_\_n\_estimators": 250, "model\_\_num\_leaves": 63, "model\_\_reg\_lambda": 1, "model\_\_subsample": 0.85\} & primary & 42 \\
+catboost & 1 & 0.560578 & 30 & \{"model\_\_depth": 4, "model\_\_iterations": 400, "model\_\_l2\_leaf\_reg": 5, "model\_\_learning\_rate": 0.03, "model\_\_random\_strength": 0.5\} & primary & 42 \\
+catboost & 2 & 0.566833 & 30 & \{"model\_\_depth": 8, "model\_\_iterations": 400, "model\_\_l2\_leaf\_reg": 10, "model\_\_learning\_rate": 0.03, "model\_\_random\_strength": 1\} & primary & 42 \\
+catboost & 3 & 0.564102 & 30 & \{"model\_\_depth": 4, "model\_\_iterations": 400, "model\_\_l2\_leaf\_reg": 3, "model\_\_learning\_rate": 0.03, "model\_\_random\_strength": 1\} & primary & 42 \\
+catboost & 4 & 0.562230 & 30 & \{"model\_\_depth": 4, "model\_\_iterations": 250, "model\_\_l2\_leaf\_reg": 10, "model\_\_learning\_rate": 0.05, "model\_\_random\_strength": 0.5\} & primary & 42 \\
+catboost & 5 & 0.585144 & 30 & \{"model\_\_depth": 8, "model\_\_iterations": 600, "model\_\_l2\_leaf\_reg": 3, "model\_\_learning\_rate": 0.03, "model\_\_random\_strength": 0\} & primary & 42 \\
+svm\_rbf & 1 & 0.425634 & 12 & \{"model\_\_C": 1, "model\_\_gamma": 0.001\} & primary & 42 \\
+svm\_rbf & 2 & 0.385623 & 12 & \{"model\_\_C": 1, "model\_\_gamma": 0.001\} & primary & 42 \\
+svm\_rbf & 3 & 0.360501 & 12 & \{"model\_\_C": 0.3, "model\_\_gamma": 0.001\} & primary & 42 \\
+svm\_rbf & 4 & 0.394976 & 12 & \{"model\_\_C": 1, "model\_\_gamma": 0.001\} & primary & 42 \\
+svm\_rbf & 5 & 0.420738 & 12 & \{"model\_\_C": 1, "model\_\_gamma": 0.001\} & primary & 42 \\
+mlp & 1 & 0.293702 & 12 & \{"model\_\_alpha": 0.01, "model\_\_hidden\_layer\_sizes": [64, 32], "model\_\_learning\_rate\_init": 0.0003\} & primary & 42 \\
+mlp & 2 & 0.336422 & 12 & \{"model\_\_alpha": 0.1, "model\_\_hidden\_layer\_sizes": [64], "model\_\_learning\_rate\_init": 0.0003\} & primary & 42 \\
+mlp & 3 & 0.272783 & 12 & \{"model\_\_alpha": 0.001, "model\_\_hidden\_layer\_sizes": [64], "model\_\_learning\_rate\_init": 0.001\} & primary & 42 \\
+mlp & 4 & 0.337649 & 12 & \{"model\_\_alpha": 0.1, "model\_\_hidden\_layer\_sizes": [64, 32], "model\_\_learning\_rate\_init": 0.003\} & primary & 42 \\
+mlp & 5 & 0.394081 & 12 & \{"model\_\_alpha": 0.1, "model\_\_hidden\_layer\_sizes": [64], "model\_\_learning\_rate\_init": 0.0003\} & primary & 42 \\
+extra\_trees & 1 & 0.454481 & 12 & \{"model\_\_max\_depth": 6, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 10, "model\_\_n\_estimators": 700\} & primary & 42 \\
+extra\_trees & 2 & 0.497117 & 12 & \{"model\_\_max\_depth": 14, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 2, "model\_\_n\_estimators": 500\} & primary & 42 \\
+extra\_trees & 3 & 0.515947 & 12 & \{"model\_\_max\_depth": 14, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 5, "model\_\_n\_estimators": 300\} & primary & 42 \\
+extra\_trees & 4 & 0.467540 & 12 & \{"model\_\_max\_depth": null, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 10, "model\_\_n\_estimators": 300\} & primary & 42 \\
+extra\_trees & 5 & 0.481352 & 12 & \{"model\_\_max\_depth": 14, "model\_\_max\_features": 0.5, "model\_\_min\_samples\_leaf": 1, "model\_\_n\_estimators": 300\} & primary & 42 \\
+hist\_gradient\_boosting & 1 & 0.529112 & 30 & \{"model\_\_l2\_regularization": 1, "model\_\_learning\_rate": 0.1, "model\_\_max\_iter": 500, "model\_\_max\_leaf\_nodes": 31, "model\_\_min\_samples\_leaf": 30\} & primary & 42 \\
+hist\_gradient\_boosting & 2 & 0.546098 & 30 & \{"model\_\_l2\_regularization": 0, "model\_\_learning\_rate": 0.05, "model\_\_max\_iter": 350, "model\_\_max\_leaf\_nodes": 63, "model\_\_min\_samples\_leaf": 30\} & primary & 42 \\
+hist\_gradient\_boosting & 3 & 0.561007 & 30 & \{"model\_\_l2\_regularization": 1, "model\_\_learning\_rate": 0.1, "model\_\_max\_iter": 200, "model\_\_max\_leaf\_nodes": 31, "model\_\_min\_samples\_leaf": 30\} & primary & 42 \\
+hist\_gradient\_boosting & 4 & 0.553489 & 30 & \{"model\_\_l2\_regularization": 5, "model\_\_learning\_rate": 0.1, "model\_\_max\_iter": 200, "model\_\_max\_leaf\_nodes": 31, "model\_\_min\_samples\_leaf": 30\} & primary & 42 \\
+hist\_gradient\_boosting & 5 & 0.511552 & 30 & \{"model\_\_l2\_regularization": 5, "model\_\_learning\_rate": 0.1, "model\_\_max\_iter": 200, "model\_\_max\_leaf\_nodes": 15, "model\_\_min\_samples\_leaf": 10\} & primary & 42 \\
+\bottomrule
+\end{tabular}

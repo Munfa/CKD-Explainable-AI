@@ -1,0 +1,9 @@
+\begin{tabular}{llrrrrrrrl}
+\toprule
+first\_model & second\_model & observed\_pr\_auc\_first & observed\_pr\_auc\_second & observed\_difference & difference\_ci\_low & difference\_ci\_high & paired\_bootstrap\_p & statistical\_tie & comparison \\
+\midrule
+lightgbm & logistic\_regression & 0.520904 & 0.370420 & 0.150484 & 0.085422 & 0.216788 & 0.000000 & False & selected\_vs\_logistic\_regression \\
+lightgbm & catboost & 0.520904 & 0.549912 & -0.029009 & -0.073876 & 0.016879 & 0.214000 & True & selected\_vs\_second\_best \\
+lightgbm & time\_only\_logistic & 0.520904 & 0.103211 & 0.417693 & 0.344030 & 0.483956 & 0.000000 & False & full\_vs\_time\_only \\
+\bottomrule
+\end{tabular}

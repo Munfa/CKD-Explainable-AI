@@ -1,0 +1,614 @@
+{
+  "task": "next observation CKD first onset prediction",
+  "unit_of_analysis": "eligible annual prediction origin",
+  "grouping_variable": "patient_id",
+  "target": "future_ckd_1 after enforcing current CKD zero and no prior CKD",
+  "raw_rows": 4000,
+  "raw_patients": 400,
+  "preprocessed_rows": 3399,
+  "preprocessed_patients": 400,
+  "positive_targets": 185,
+  "predictor_count": 80,
+  "current_predictors": [
+    "gender",
+    "job",
+    "family_diabetes",
+    "height_cm",
+    "diabetic_year",
+    "age",
+    "weight_kg",
+    "bmi_current",
+    "follow_diet",
+    "take_medicine",
+    "insulin",
+    "hypertension",
+    "heart_disease",
+    "sleep_sufficient",
+    "water_sufficient",
+    "smoke",
+    "zarda_betel",
+    "walk_regularly",
+    "urination_proper",
+    "urinary_infection",
+    "pain_killer",
+    "calorie_intake",
+    "prior_visit_count"
+  ],
+  "strict_past_predictors": [
+    "weight_kg_lag1",
+    "weight_kg_delta1",
+    "weight_kg_past_mean",
+    "bmi_current_lag1",
+    "bmi_current_delta1",
+    "bmi_current_past_mean",
+    "calorie_intake_lag1",
+    "calorie_intake_delta1",
+    "calorie_intake_past_mean",
+    "follow_diet_lag1",
+    "follow_diet_delta1",
+    "follow_diet_past_mean",
+    "take_medicine_lag1",
+    "take_medicine_delta1",
+    "take_medicine_past_mean",
+    "insulin_lag1",
+    "insulin_delta1",
+    "insulin_past_mean",
+    "hypertension_lag1",
+    "hypertension_delta1",
+    "hypertension_past_mean",
+    "heart_disease_lag1",
+    "heart_disease_delta1",
+    "heart_disease_past_mean",
+    "sleep_sufficient_lag1",
+    "sleep_sufficient_delta1",
+    "sleep_sufficient_past_mean",
+    "water_sufficient_lag1",
+    "water_sufficient_delta1",
+    "water_sufficient_past_mean",
+    "smoke_lag1",
+    "smoke_delta1",
+    "smoke_past_mean",
+    "zarda_betel_lag1",
+    "zarda_betel_delta1",
+    "zarda_betel_past_mean",
+    "walk_regularly_lag1",
+    "walk_regularly_delta1",
+    "walk_regularly_past_mean",
+    "urination_proper_lag1",
+    "urination_proper_delta1",
+    "urination_proper_past_mean",
+    "urinary_infection_lag1",
+    "urinary_infection_delta1",
+    "urinary_infection_past_mean",
+    "pain_killer_lag1",
+    "pain_killer_delta1",
+    "pain_killer_past_mean",
+    "weight_kg_past_min",
+    "weight_kg_past_max",
+    "weight_kg_past_slope",
+    "bmi_current_past_min",
+    "bmi_current_past_max",
+    "bmi_current_past_slope",
+    "calorie_intake_past_min",
+    "calorie_intake_past_max",
+    "calorie_intake_past_slope"
+  ],
+  "removed_predictors": [
+    {
+      "predictor": "patient_id",
+      "main_analysis_action": "grouping_only",
+      "reason": "prevents patient leakage"
+    },
+    {
+      "predictor": "average_age",
+      "main_analysis_action": "removed_patient_summary",
+      "reason": "may summarize later observations"
+    },
+    {
+      "predictor": "average_weight_kg",
+      "main_analysis_action": "removed_patient_summary",
+      "reason": "may summarize later observations"
+    },
+    {
+      "predictor": "stored_bmi",
+      "main_analysis_action": "replaced_by_recalculated_current_bmi",
+      "reason": "current BMI is recomputed from current height and weight"
+    },
+    {
+      "predictor": "current_ckd",
+      "main_analysis_action": "eligibility_only",
+      "reason": "not used as a predictor"
+    },
+    {
+      "predictor": "future_ckd_label",
+      "main_analysis_action": "target_only",
+      "reason": "future information cannot enter predictors"
+    }
+  ],
+  "feature_metadata": [
+    {
+      "feature": "gender",
+      "feature_family": "gender",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "job",
+      "feature_family": "job",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "family_diabetes",
+      "feature_family": "family_diabetes",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "height_cm",
+      "feature_family": "height_cm",
+      "feature_role": "continuous",
+      "source": "current"
+    },
+    {
+      "feature": "diabetic_year",
+      "feature_family": "diabetic_year",
+      "feature_role": "continuous",
+      "source": "current"
+    },
+    {
+      "feature": "age",
+      "feature_family": "age",
+      "feature_role": "continuous",
+      "source": "current"
+    },
+    {
+      "feature": "weight_kg",
+      "feature_family": "weight_kg",
+      "feature_role": "continuous",
+      "source": "current"
+    },
+    {
+      "feature": "bmi_current",
+      "feature_family": "bmi",
+      "feature_role": "continuous",
+      "source": "current"
+    },
+    {
+      "feature": "follow_diet",
+      "feature_family": "follow_diet",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "take_medicine",
+      "feature_family": "take_medicine",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "insulin",
+      "feature_family": "insulin",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "hypertension",
+      "feature_family": "hypertension",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "heart_disease",
+      "feature_family": "heart_disease",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "sleep_sufficient",
+      "feature_family": "sleep_sufficient",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "water_sufficient",
+      "feature_family": "water_sufficient",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "smoke",
+      "feature_family": "smoke",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "zarda_betel",
+      "feature_family": "zarda_betel",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "walk_regularly",
+      "feature_family": "walk_regularly",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "urination_proper",
+      "feature_family": "urination_proper",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "urinary_infection",
+      "feature_family": "urinary_infection",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "pain_killer",
+      "feature_family": "pain_killer",
+      "feature_role": "categorical_or_binary",
+      "source": "current"
+    },
+    {
+      "feature": "calorie_intake",
+      "feature_family": "calorie_intake",
+      "feature_role": "continuous",
+      "source": "current"
+    },
+    {
+      "feature": "prior_visit_count",
+      "feature_family": "prior_visit_count",
+      "feature_role": "continuous",
+      "source": "current"
+    },
+    {
+      "feature": "weight_kg_lag1",
+      "feature_family": "weight_kg",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "weight_kg_delta1",
+      "feature_family": "weight_kg",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "weight_kg_past_mean",
+      "feature_family": "weight_kg",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "bmi_current_lag1",
+      "feature_family": "bmi",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "bmi_current_delta1",
+      "feature_family": "bmi",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "bmi_current_past_mean",
+      "feature_family": "bmi",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "calorie_intake_lag1",
+      "feature_family": "calorie_intake",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "calorie_intake_delta1",
+      "feature_family": "calorie_intake",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "calorie_intake_past_mean",
+      "feature_family": "calorie_intake",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "follow_diet_lag1",
+      "feature_family": "follow_diet",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "follow_diet_delta1",
+      "feature_family": "follow_diet",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "follow_diet_past_mean",
+      "feature_family": "follow_diet",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "take_medicine_lag1",
+      "feature_family": "take_medicine",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "take_medicine_delta1",
+      "feature_family": "take_medicine",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "take_medicine_past_mean",
+      "feature_family": "take_medicine",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "insulin_lag1",
+      "feature_family": "insulin",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "insulin_delta1",
+      "feature_family": "insulin",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "insulin_past_mean",
+      "feature_family": "insulin",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "hypertension_lag1",
+      "feature_family": "hypertension",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "hypertension_delta1",
+      "feature_family": "hypertension",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "hypertension_past_mean",
+      "feature_family": "hypertension",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "heart_disease_lag1",
+      "feature_family": "heart_disease",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "heart_disease_delta1",
+      "feature_family": "heart_disease",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "heart_disease_past_mean",
+      "feature_family": "heart_disease",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "sleep_sufficient_lag1",
+      "feature_family": "sleep_sufficient",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "sleep_sufficient_delta1",
+      "feature_family": "sleep_sufficient",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "sleep_sufficient_past_mean",
+      "feature_family": "sleep_sufficient",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "water_sufficient_lag1",
+      "feature_family": "water_sufficient",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "water_sufficient_delta1",
+      "feature_family": "water_sufficient",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "water_sufficient_past_mean",
+      "feature_family": "water_sufficient",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "smoke_lag1",
+      "feature_family": "smoke",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "smoke_delta1",
+      "feature_family": "smoke",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "smoke_past_mean",
+      "feature_family": "smoke",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "zarda_betel_lag1",
+      "feature_family": "zarda_betel",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "zarda_betel_delta1",
+      "feature_family": "zarda_betel",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "zarda_betel_past_mean",
+      "feature_family": "zarda_betel",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "walk_regularly_lag1",
+      "feature_family": "walk_regularly",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "walk_regularly_delta1",
+      "feature_family": "walk_regularly",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "walk_regularly_past_mean",
+      "feature_family": "walk_regularly",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "urination_proper_lag1",
+      "feature_family": "urination_proper",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "urination_proper_delta1",
+      "feature_family": "urination_proper",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "urination_proper_past_mean",
+      "feature_family": "urination_proper",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "urinary_infection_lag1",
+      "feature_family": "urinary_infection",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "urinary_infection_delta1",
+      "feature_family": "urinary_infection",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "urinary_infection_past_mean",
+      "feature_family": "urinary_infection",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "pain_killer_lag1",
+      "feature_family": "pain_killer",
+      "feature_role": "categorical_or_binary",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "pain_killer_delta1",
+      "feature_family": "pain_killer",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "pain_killer_past_mean",
+      "feature_family": "pain_killer",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "weight_kg_past_min",
+      "feature_family": "weight_kg",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "weight_kg_past_max",
+      "feature_family": "weight_kg",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "weight_kg_past_slope",
+      "feature_family": "weight_kg",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "bmi_current_past_min",
+      "feature_family": "bmi",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "bmi_current_past_max",
+      "feature_family": "bmi",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "bmi_current_past_slope",
+      "feature_family": "bmi",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "calorie_intake_past_min",
+      "feature_family": "calorie_intake",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "calorie_intake_past_max",
+      "feature_family": "calorie_intake",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    },
+    {
+      "feature": "calorie_intake_past_slope",
+      "feature_family": "calorie_intake",
+      "feature_role": "continuous",
+      "source": "strict_past_history"
+    }
+  ],
+  "continuous_scaling": "Continuous predictors are median imputed and standardized for Logistic Regression, SVM, and MLP only.",
+  "categorical_handling": "Binary and ordinal predictors are most frequent imputed and are not standardized in scaled branches.",
+  "imbalance_primary": "Class weighting, with model specific weighting. MLP uses training only random oversampling because sklearn MLP has no class weight parameter.",
+  "history_rule": "Every lag, prior mean, prior minimum, prior maximum, and prior slope uses strictly earlier observations."
+}

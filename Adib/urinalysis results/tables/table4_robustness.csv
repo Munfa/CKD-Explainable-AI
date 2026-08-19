@@ -1,0 +1,4 @@
+dataset,analysis,value,ci_low,ci_high
+Dataset1_Urinalysis,Selected (random_forest) ROC_AUC,0.9729561708823907,0.951556864135978,0.9822060900905795
+Dataset1_Urinalysis,selected_vs_logreg (ROC_AUC diff),-0.00543042820261741,-0.013456826413759723,0.001962309697494765
+Dataset1_Urinalysis,selected_vs_second (ROC_AUC diff),-0.00543042820261741,-0.013254126988865309,0.002055327591158031

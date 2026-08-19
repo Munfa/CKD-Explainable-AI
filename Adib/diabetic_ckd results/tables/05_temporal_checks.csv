@@ -1,0 +1,9 @@
+check,passed
+current_ckd_is_zero,True
+no_prior_ckd,True
+complete_future_horizon,True
+patient_id_excluded,True
+stored_patient_summaries_excluded,True
+stored_bmi_excluded_from_main,True
+future_labels_excluded,True
+first_onset_positive_count_matches_patients_ever_ckd,True

@@ -1,0 +1,16 @@
+\begin{tabular}{llrrrrrrr}
+\toprule
+first\_model & second\_model & observed\_pr\_auc\_first & observed\_pr\_auc\_second & observed\_difference & difference\_ci\_low & difference\_ci\_high & paired\_bootstrap\_p & statistical\_tie \\
+\midrule
+catboost & catboost & 0.549912 & 0.549912 & 0.000000 & 0.000000 & 0.000000 & 1.000000 & True \\
+catboost & xgboost & 0.549912 & 0.570151 & -0.020239 & -0.053732 & 0.016710 & 0.302000 & True \\
+catboost & lightgbm & 0.549912 & 0.520904 & 0.029009 & -0.012665 & 0.071167 & 0.172000 & True \\
+catboost & random\_forest & 0.549912 & 0.501008 & 0.048904 & -0.004057 & 0.102458 & 0.065000 & True \\
+catboost & hist\_gradient\_boosting & 0.549912 & 0.532139 & 0.017773 & -0.026596 & 0.063426 & 0.424000 & True \\
+catboost & extra\_trees & 0.549912 & 0.453618 & 0.096295 & 0.047754 & 0.148699 & 0.000000 & False \\
+catboost & svm\_rbf & 0.549912 & 0.420476 & 0.129436 & 0.069279 & 0.188639 & 0.000000 & False \\
+catboost & decision\_tree & 0.549912 & 0.465022 & 0.084891 & 0.027373 & 0.142901 & 0.006000 & False \\
+catboost & logistic\_regression & 0.549912 & 0.370420 & 0.179493 & 0.117886 & 0.238389 & 0.000000 & False \\
+catboost & mlp & 0.549912 & 0.302251 & 0.247662 & 0.171209 & 0.319676 & 0.000000 & False \\
+\bottomrule
+\end{tabular}

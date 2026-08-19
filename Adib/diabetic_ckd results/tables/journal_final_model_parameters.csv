@@ -1,0 +1,39 @@
+parameter,value
+memory,None
+steps,"[[""preprocess"", ""SimpleImputer(strategy='median')""], [""sampler"", ""passthrough""], [""model"", ""LGBMClassifier(colsample_bytree=0.7, learning_rate=0.03, max_depth=12,\n               n_estimators=250, n_jobs=1, num_leaves=63, objective='binary',\n               random_state=15042, reg_lambda=1,\n               scale_pos_weight=17.372972972972974, subsample=0.85,\n               verbosity=-1)""]]"
+transform_input,None
+verbose,False
+preprocess,SimpleImputer(strategy='median')
+sampler,passthrough
+model,"LGBMClassifier(colsample_bytree=0.7, learning_rate=0.03, max_depth=12,
+               n_estimators=250, n_jobs=1, num_leaves=63, objective='binary',
+               random_state=15042, reg_lambda=1,
+               scale_pos_weight=17.372972972972974, subsample=0.85,
+               verbosity=-1)"
+preprocess__add_indicator,False
+preprocess__copy,True
+preprocess__fill_value,None
+preprocess__keep_empty_features,False
+preprocess__missing_values,None
+preprocess__strategy,median
+model__boosting_type,gbdt
+model__class_weight,None
+model__colsample_bytree,0.7
+model__importance_type,split
+model__learning_rate,0.03
+model__max_depth,12
+model__min_child_samples,20
+model__min_child_weight,0.001
+model__min_split_gain,0.0
+model__n_estimators,250
+model__n_jobs,1
+model__num_leaves,63
+model__objective,binary
+model__random_state,15042
+model__reg_alpha,0.0
+model__reg_lambda,1
+model__subsample,0.85
+model__subsample_for_bin,200000
+model__subsample_freq,0
+model__scale_pos_weight,17.372972972972974
+model__verbosity,-1

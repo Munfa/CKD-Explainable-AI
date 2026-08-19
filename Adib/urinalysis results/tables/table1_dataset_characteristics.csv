@@ -1,0 +1,14 @@
+,Dataset 1 (Urinalysis)
+Patients,380
+Records,380
+Records per patient,1
+Predictors,20
+Continuous predictors,3
+Categorical predictors,17
+"CKD positive (n, % )",239 (62.9%)
+"CKD negative (n, % )",141 (37.1%)
+Missing values,0
+Primary metric,ROC-AUC
+Validation,Stratified 5 by 3 nested cross validation
+Removed predictors,p_id
+Derived predictors,None

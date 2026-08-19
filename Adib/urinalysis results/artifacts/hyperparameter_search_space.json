@@ -1,0 +1,47 @@
+{
+  "logreg": {
+    "clf__C": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2f99e9100>"
+  },
+  "decision_tree": {
+    "clf__max_depth": "[2, 3, 4, 6, 8, 12, None]",
+    "clf__min_samples_leaf": "[1, 2, 5, 10, 20]",
+    "clf__min_samples_split": "[2, 5, 10, 20]",
+    "clf__ccp_alpha": "[0.0, 0.0001, 0.001, 0.01]"
+  },
+  "random_forest": {
+    "clf__n_estimators": "[200, 400, 600]",
+    "clf__max_depth": "[None, 6, 10, 16]",
+    "clf__max_features": "['sqrt', 'log2', 0.5]",
+    "clf__min_samples_leaf": "[1, 2, 5]"
+  },
+  "xgboost": {
+    "clf__n_estimators": "[200, 400, 600]",
+    "clf__max_depth": "[3, 4, 6, 8]",
+    "clf__learning_rate": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2f99e9100>",
+    "clf__subsample": "[0.7, 0.85, 1.0]",
+    "clf__colsample_bytree": "[0.7, 0.85, 1.0]",
+    "clf__min_child_weight": "[1, 3, 5]",
+    "clf__reg_lambda": "[0.5, 1.0, 2.0, 5.0]"
+  },
+  "lightgbm": {
+    "clf__n_estimators": "[200, 400, 600]",
+    "clf__num_leaves": "[15, 31, 63]",
+    "clf__max_depth": "[-1, 4, 8]"
+  },
+  "catboost": {
+    "clf__depth": "[4, 6, 8]",
+    "clf__learning_rate": "[0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1, 0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.2, 0.21, 0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.3]",
+    "clf__iterations": "[200, 400, 600]",
+    "clf__l2_leaf_reg": "[1, 3, 5, 9]"
+  },
+  "svm": {
+    "clf__C": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2f99e9100>",
+    "clf__gamma": "['scale', 0.001, 0.01, 0.1]"
+  },
+  "mlp": {
+    "clf__hidden_layer_sizes": "[(64,), (128,), (64, 32), (128, 64)]",
+    "clf__alpha": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x7fa2dd485b50>",
+    "clf__learning_rate_init": "[0.001, 0.0005]",
+    "clf__batch_size": "[32, 64, 128]"
+  }
+}

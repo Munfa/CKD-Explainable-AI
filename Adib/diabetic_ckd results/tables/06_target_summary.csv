@@ -1,0 +1,9 @@
+measure,value
+eligible_examples,3399.0
+positive_examples,185.0
+negative_examples,3214.0
+positive_prevalence,0.054427772874374815
+patients,400.0
+main_features,80.0
+current_features,23.0
+history_features,57.0
